@@ -2,46 +2,51 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+
 /*----------------Estilos Base------------------*/
 img{
     display: block;
     width: 100%;
     max-width: 100%;
 }
+
 h1,h2,h3,h4,h5{
     margin: 0;
 }
+
 .container{
     width: 100%;
     margin: auto;
 }
+
 .container--flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+
 .column{
     width: 100%;
 }
 
 /*----------------Estilos Header------------------*/
-
-
 .main-header{
     width: 100%;
 }
+
 .logo{
     font-size: 1.9em;
     color: #de423a;
     padding: 10px;
-    font-family: 'Sacramento', cursive;
-        
+    font-family: 'Sacramento', cursive;        
 }
+
 .main-header__contactInfo__phone{
     background:#de423a;
     color: #fff;
@@ -53,11 +58,13 @@ h1,h2,h3,h4,h5{
     padding: 10px;
     margin: 0px;
 }
+
 .main-header [class*="icon-"]:before{
     position: relative;
     top:2px;
     right: 3px;
 }
+
 /*----------------Estilos Menu------------------*/
 .main_nav{
     width: 100%;
@@ -67,7 +74,7 @@ h1,h2,h3,h4,h5{
 }
 
 .icon-menu{
-    display: block;
+	display: block;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 3px;
@@ -77,13 +84,11 @@ h1,h2,h3,h4,h5{
     text-align: center;
     cursor:pointer;
     font-size: 1.5em;
-    
 }
 
 .social-icon{
     display: flex;
     justify-content: space-between;
-    
 }
 
 .social-icon [class*="icon-"]{
@@ -101,11 +106,9 @@ h1,h2,h3,h4,h5{
 
 .social-icon__link{
     text-decoration: none;
-   
 }
 
-.menu{
-    
+.menu{    
     position: absolute;
     top: 75px;
     left: 0;
@@ -127,39 +130,44 @@ h1,h2,h3,h4,h5{
     padding: 15px;
     color: white;
     text-align: center;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
+
 .menu__link:hover{
      background-color: #DE423A;
 }
+
 .menu__link--select{
     background-color: #DE423A;
     
 }
+
 .mostrar{
     height: 210px;
 }
-/*----------------Estilos Banner------------------*/
 
+/*----------------Estilos Banner------------------*/
 .banner{
-    margin-top:-52px;
+    margin-top:-55px;
     position: relative;
 }
+
 .banner:before {
-    content: '';
+    content:'';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     top: 0;
 }
+
 .banner__img{
     width: 100%;
-    height: 400px;
-    object-fit: cover
+    height: 350px;
+    object-fit:cover
 }
+
 .banner__content {
     width: 70%;
     color: white;
@@ -170,8 +178,7 @@ h1,h2,h3,h4,h5{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.5em;
-    font-weight:bold;
-    
+    font-weight:bold; 
 }
 
 /*----------------Estilos Principales------------------*/
@@ -179,22 +186,23 @@ h1,h2,h3,h4,h5{
 	background-color: #DE423A;
 	padding: 10px;
 	text-align: center;
-	
 }
+
 .main__title{
 	margin: 15px 0;
 	font-size: 2.8em;
-	font-family: 'Sacramento',cursive;
-	
+	font-family: 'Sacramento',cursive;	
 }
+
 .column__title{
 	font-size: 1.3em;
 }
+
 .main__about_description .column:nth-child(2){
 	padding: 10px;
 }
-.btn{
-	
+
+.btn{	
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -203,8 +211,8 @@ h1,h2,h3,h4,h5{
 	color: #fff;
 	padding:10px;
 	margin: 10px auto;
-	
 }
+
 .group__title{
 	font-family:'Sacramento',cursive;
 	text-align: center;
@@ -229,6 +237,7 @@ h1,h2,h3,h4,h5{
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
+
 .today-special__price{
 	font-size: 1.5em;
 	color: #DE423a;
@@ -244,19 +253,18 @@ h1,h2,h3,h4,h5{
 	padding-bottom: 20px;
 	font-size: .8em;
 }
+
 .copy{
 	text-align: center;
 	margin: auto;
-	margin-top: 15px;
-	
+	margin-top: 15px;	
 }
 
 .main-footer [class*="icon-"] {
 	color: #fff;
 	text-decoration: none;
-	
-	
 }
+
 .main-footer [class*="icon-"]:before{
 	position: relative;
 	top: 3px;
@@ -264,91 +272,95 @@ h1,h2,h3,h4,h5{
 }
 
 /*----------------Estilos Responsivos------------------*/
-
 @media screen and (min-width:480px){
 	.logo{
 		color: #fff;
-		
 	}
+
 	.main-header__contactInfo{
 		text-align:right;
 	}
+
 	.banner{
-		margin-top: -145px;
-		z-index: -1000;
+		 margin-top: -55px;
+		/* z-index: -1000; */
 	}
+
 	.main-header__contactInfo__phone{
 		background: none;
 	}
+
 	.main-header__contactInfo__addres{
 		color: #fff;
 	}
+
 	.main_nav{
 		background:rgba(0,0,0,0.85);
 	}
-	.banner__content{
+
+	/* .banner__content{
 		font-size:1.5em;
-	}
+	} */
+
 	.column--50{
 		width: 49%;
 	}
+
 	.column--50--25{
 		width: 49%;
 	}
+
 	.column--33{
 		width: 32%;
 	}
 	
 	.main__about_description .column:nth-child(2){
 		padding-left: 20px;
-		font-size: .9em;
-		
+		font-size: .9em;	
 	}
+
 	.main__about_description .btn{
 		margin: 0;
 	}
+
 	.today-special .column {
 		border: 5px solid #ddd;
 		padding: 5px;
 	}
+
 	.today-special__img{
 		height: 200px;
 		object-fit: cover;
 	}
+
 	.main-footer .container--flex{
 		align-items: flex-start;
 	}
-	
-	
 }
+
 @media screen and (min-width:1024px){
 .container{
 		width: 1000px
 	}
+
 	.logo{
 		padding-top: 20px;
-		font-size: 2em;
-	
-		
+		font-size: 2em;	
 	}
 		
 	.main-header__contactInfo__phone,
 	.main-header__contactInfo__addres{
 		font-size: 1.18em;
 		padding-right: 0px;
-		
-		
-		
 	}
 	
 	.main_nav{
-    
     	padding: 0px;
 	}
 	
-	.banner__content{
+	/* .banner__content{
 		font-size:2.5em;
-	}
+	} */
 	
 	.icon-menu{
 		display: none;
@@ -362,58 +374,37 @@ h1,h2,h3,h4,h5{
 	}
 	
 	.menu__link{
-   
     	padding: 18px;
-      
 	}
+
 	.group--color .container{
 		margin-top: 30px;
 		margin-bottom: 30px;
 		padding: 20px
-	
 	}
+
 	.main__title{
 		font-size: 2.5em;
 	}
-	.main__about_description .column--50:nth-child(2) .column__txt
-	{
+
+	.main__about_description .column--50:nth-child(2) .column__txt{
 		line-height: 55px;
 		text-align: justify;
-		
 	}
+
 	.group__title{
 		font-size: 2.5em;
 	}
+
 	.column--50--25{
 		width: 24.5%;
 	}
+
 	.today-special__tittle{
-	
 		font-size: 1.9em;
-		
 	}
+
 	.today-special__price{
 	font-size: 2.2em;
-	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
