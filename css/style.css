@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Rubik';
     margin: 0;
 }
 
@@ -78,6 +79,7 @@ h1,h2,h3,h4,h5{
 
 /*----------------Estilos Menu------------------*/
 .main_nav{
+	background:rgba(0,0,0,0.85);
     width: 100%;
     position:relative;
     z-index: 2000;  
@@ -103,7 +105,7 @@ h1,h2,h3,h4,h5{
 }
 
 .social-icon [class*="icon-"]{
-    color: black;
+    color: whitesmoke;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -111,7 +113,7 @@ h1,h2,h3,h4,h5{
     font-size: 1.3em;
     width: 35px;
     height: 35px;
-    background: #fff;
+    background: #27C7FE;
     border-radius: 50%;
 }
 
@@ -121,10 +123,10 @@ h1,h2,h3,h4,h5{
 
 .menu{    
     position: absolute;
-    top: 75px;
+    background:rgba(162, 162, 162, 0.563);
+    top: 60px;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,.85);
     padding:0px;
     margin:0px;
     z-index: 2000px;
@@ -138,19 +140,19 @@ h1,h2,h3,h4,h5{
 
 .menu__link{
     display: block;
+    color: #27C7FE;
     padding: 15px;
-    color: white;
     text-align: center;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .menu__link:hover{
-     background-color: #DE423A;
+	color:whitesmoke;
+	background-color:#27C7FE;
 }
 
 .menu__link--select{
-    background-color: #DE423A;
-    
+    color: #27C7FE;
 }
 
 .mostrar{
@@ -166,9 +168,9 @@ h1,h2,h3,h4,h5{
 .banner:before {
     content:'';
     position: absolute;
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     top: 0;
 }
@@ -180,12 +182,12 @@ h1,h2,h3,h4,h5{
 }
 
 .banner__content {
-    width: 70%;
-    color: rgb(255, 255, 255);
-    text-align:center;
     position: absolute;
+	color: rgb(255, 255, 255);
+    width: 70%;
+    text-align:center;
     z-index: 1500;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.5em;
@@ -194,19 +196,30 @@ h1,h2,h3,h4,h5{
 
 /*----------------Estilos Principales------------------*/
 .group--color .container{
-	background-color: #DE423A;
+	background-color: #27C7FE;
 	padding: 10px;
 	text-align: center;
 }
 
 .main__title{
+	color: whitesmoke;
 	margin: 15px 0;
-	font-size: 2.8em;
-	font-family: 'Sacramento',cursive;	
+	font-size: 2.5em;
+	font-family:"rubik";
+	font-style:normal;	
+}
+
+.main_txt{
+	color: whitesmoke;
+	font-size: 18px;
 }
 
 .column__title{
-	font-size: 1.3em;
+	font-size: 20px;
+}
+
+.column__text{
+	font-size: 10px;
 }
 
 .main__about_description .column:nth-child(2){
@@ -218,52 +231,56 @@ h1,h2,h3,h4,h5{
 	text-align: center;
 	text-decoration: none;
 	width: 120px;
-	background: #DE423A;
-	color: #fff;
+	background: #27C7FE;
+	color: whitesmoke;
 	padding:10px;
 	margin: 10px auto;
 }
 
 .group__title{
-	font-family:'Sacramento',cursive;
+	font-family:'rubik',cursive;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.8em;
+	font-size: 30px;
 	margin: 30px;
 }
 
-.today-special .column {
+.featured_talent .column {
 	margin-bottom: 30px;
 	text-align: center;
 }
 
-.today-special__img{
+.featured_talent_img{
 	margin: auto;
 	max-width: 350px;
+	border-radius: 5px;
 }
 
-.today-special__tittle{
+.featured_talent__gen{
 	
-	font-size: 1.3em;
+	font-size: 15px;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
-.today-special__price{
-	font-size: 1.5em;
-	color: #DE423a;
+.featured_talent__name{
+	font-size:25px;
+	color: #27C7FE;
 	font-weight: bold;
+	padding-bottom: 5px;
 }
 
-/*----------------Estilos Principales------------------*/
+/*----------------Estilos footer------------------*/
 .main-footer{
-	background: #222;
+	background: #1faad9;
 	color: #fff;
 	padding: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: .8em;
 }
+
+
 
 .copy{
 	text-align: center;
@@ -283,7 +300,8 @@ h1,h2,h3,h4,h5{
 }
 
 /*----------------Estilos Responsivos------------------*/
-@media screen and (min-width:480px){
+@media screen and (min-width:480px){ 
+	/* movil */
 	.logo{
 		color: #000000;
 	}
@@ -336,12 +354,12 @@ h1,h2,h3,h4,h5{
 		margin: 0;
 	}
 
-	.today-special .column {
-		border: 5px solid #ddd;
+	.featured_talent .column {
+		border: 5px solid #27C7FE;
 		padding: 5px;
 	}
 
-	.today-special__img{
+	.featured_talent__img{
 		height: 200px;
 		object-fit: cover;
 	}
@@ -352,6 +370,7 @@ h1,h2,h3,h4,h5{
 }
 
 @media screen and (min-width:1024px){
+	/* completa */
 .container{
 		width: 1000px
 	}
@@ -369,6 +388,9 @@ h1,h2,h3,h4,h5{
 	
 	.main_nav{
     	padding: 0px;
+		background-color:#f5f5f590;
+		background:rgba(162, 162, 162, 0.563);
+
 	}
 	
 	/* .banner__content{
@@ -384,6 +406,8 @@ h1,h2,h3,h4,h5{
 		display: flex;
 		height: 60px;
 		width: auto;
+		background-color:#f5f5f500;
+
 	}
 	
 	.menu__link{
@@ -410,14 +434,15 @@ h1,h2,h3,h4,h5{
 	}
 
 	.column--50--25{
-		width: 24.5%;
+		width: 24%;
+		height: 350px;
 	}
 
-	.today-special__tittle{
-		font-size: 1.9em;
+	.featured_talent__gen{
+		font-size: 18px;
 	}
 
-	.today-special__price{
-	font-size: 2.2em;
+	.featured_talent__name{
+		font-size: 35px;
 	}
 }
