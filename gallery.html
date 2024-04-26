@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/carrousel.css">
     <link href="https://file.myfontastic.com/3j45yvRpaWhzeStdASehh9/icons.css" rel="stylesheet">
     <link rel="icon" href="./Images/Hololive-Production-Symbol.png" type="image/x-icon">    
 </head>
@@ -57,8 +58,22 @@
     </section>
 
 <!--principal-->
-    <main>
-
+    <main style="align-items: center;">
+        <div class="carrousel">
+            <div class="grande">
+                <img src="./images/gallery-img1.png" alt="Imagen 1" class="img-car">
+                <img src="./images/gallery-img2.png" alt="Imagen 2" class="img-car">
+                <img src="./images/gallery-img4.png" alt="Imagen 1" class="img-car">
+                <img src="./images/gallery-img5.png" alt="Imagen 2" class="img-car">
+            </div>
+    
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
     </main>
 <!--principal-->
 
@@ -84,6 +99,9 @@
             <p class="copy">@ 2024 Cover Corp. | Todos los derechos reservados</p>
         </div>
     </footer>
-
+ 
+<!--javascript-->
+    <script src="js/menu.js"></script>
+    <script src="js/carrousel.js"></script>
 </body>
 </html>
