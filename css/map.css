@@ -1,0 +1,22 @@
+.map-container{
+    width: 90%;
+    max-width: 800px;
+    background: #27c7fe;
+    padding: 5px;
+    margin: 30px auto;
+    /* display: flex; */
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #00000072;
+    justify-content: center;
+    border-radius: 4px;
+    font-family: 'rubik';
+    color: white;
+
+}
+
+.map-container h4{
+    font-size: 22px;
+    margin: 10px;
+    text-decoration: none;
+}
+
